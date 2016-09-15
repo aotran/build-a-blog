@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #D3D3D3;
+}
+
+header {
+    background-image:url("header-800x234.jpg");
+    height:234px;
+    position:relative;
+}
+
+h1 {
+    position:absolute;
+    top:80%;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+input[type=text] {
+    width:600px;
+    font-size: 14px;
+}
+
+textarea {
+    width:600px;
+}
+
+.error {
+    color: red;
+    }
+
+.post-title {
+
+    }
+
+.post-content {
+
+    }
+
+.post-link {
+
+}
+
+.divider {
+    color:#GGGGGG;
+    style:solid;
+    width:500px;
+}

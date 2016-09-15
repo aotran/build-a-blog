@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<!-- Extension for writing posts -->
+
+{% block content %}
+
+<form action="/newpost" method="post">
+    <p>
+    <label>
+        Post Title<br/>
+        <input type="text" name="new-title" value="{{title}}"/>
+    </label>
+    </p>
+    <p>
+    <label>
+        Post Content<br/>
+        <textarea name="new-content">{{content}}</textarea>
+    </label>
+    </p>
+    <input type="submit"/>
+    <p class="error">{{error}}</p>
+</form>
+
+{% endblock %}
