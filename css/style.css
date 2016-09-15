@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    width: 800px;
-    margin-left: 20px;
-    margin-top: 20px;
+    font-family:Arial, sans-serif;
+    font-size:small;
+    width:800px;
+    margin-left:20px;
+    margin-top:0px;
     background-color: #D3D3D3;
 }
 
@@ -25,16 +25,32 @@ a {
 
 input[type=text] {
     width:600px;
-    font-size: 14px;
+    font-size:medium;
 }
 
 textarea {
-    width:600px;
+    width:575px;
+    height:400px;
+    font-size:small;
 }
 
 .error {
     color: red;
     }
+table {
+    padding:none;
+}
+.main-content {
+    width:75%;
+}
+
+.sidebar {
+    width:25%;
+    font-size:medium;
+    font-weight:bold;
+    vertical-align:top;
+    padding-left:10px;
+}
 
 .post-title {
 
@@ -45,11 +61,19 @@ textarea {
     }
 
 .post-link {
+    float:right;
+}
 
+.post-date {
+    float:left;
 }
 
 .divider {
+    clear:both;
+}
+.divide-line {
     color:#GGGGGG;
     style:solid;
-    width:500px;
+    width:475px;
+    margin-top:20px;
 }

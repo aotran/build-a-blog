@@ -9,8 +9,16 @@
         <h1>Build A Blog Project</h1>
         </header>
         <main>
-        {% block content %}
-        {% endblock %}
+        <table><tbody><tr>
+            <td class="main-content">
+            {% block content %}
+            {% endblock %}
+            </td>
+            <td class="sidebar">
+                Navigation<br/>
+                <a href="/">Home</a><br/>
+                <a href="/newpost">Post</a>
+            </td></tr></tbody></table>
         </main>
     </body>
 </html>

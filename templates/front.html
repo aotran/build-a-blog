@@ -5,9 +5,12 @@
 {% for post in posts %}
     <article>
     <h2 class="post-title">{{post.title}}</h2>
-    <p class="post-content">{{post.content}}</p>
-    <div class="post-date">{{post.}}</div><div class="post-link"><a href="{{post.key().id()}}">permalink</a></div>
-    <hr class="divider">
+    <p class="post-content">{{post.content | safe}}</p>
+    <p>
+        <span class="post-date">{{post.created.strftime("%b %d, %Y")}}</span>
+        <span class="post-link"><a href="{{post.key().id()}}">permalink</a></span>
+    </p>
+    <p class="divider"><hr class="divide-line"></p>
     </article>
 {% endfor %}
 
